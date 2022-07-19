@@ -1,0 +1,39 @@
+$border : 1px solid #ddd;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+
+    @media(min-width: 1460px) {
+        max-width: 1360px;
+    }
+}
+
+html,
+body {
+    min-width: 100%;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+
+a {
+    color: black;
+
+    &:hover {
+        color: black;
+    }
+}
+
+@import 'header.scss';
+@import 'footer.scss';
+@import 'content.scss';
+@import 'search.scss';
+@import 'sidebar.scss';
+@import 'pagination.scss';
+@import '404.scss';

@@ -1,0 +1,89 @@
+@mixin prev {
+    top: 1em;
+    left: 5em;
+}
+
+@mixin next {
+    top: 1em;
+    right: 5em;
+}
+
+.paginate {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 1em 0;
+    border-bottom: $border;
+
+    .prev {
+        @include prev;
+
+        @media screen and (max-width: 767px) {
+            left: 0
+        }
+    }
+
+    .next {
+        @include next;
+
+        @media screen and (max-width: 767px) {
+            right: 0;
+        }
+    }
+
+    a {
+        padding: 1em;
+    }
+
+    span {
+        padding: 1em;
+    }
+}
+
+.singlepagination {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 2em 0;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+a[rel="prev"]{
+    @include prev;
+    border: $border;
+    padding: 1em;
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        display: inline-block;
+        width: 80%;
+        margin-bottom: 0.2em;
+    }
+
+    @media screen and (max-width: 666px) {
+        width: 51%;
+        right: 1%;
+    }
+}
+
+a[rel="next"]{
+    @include next;
+    border: $border;
+    padding: 1em;
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        display: inline-block;
+        width: 80%;
+        margin-top: 0.2em;
+    }
+
+    @media screen and (max-width: 666px) {
+        width: 50%;
+        left: 1%;
+    }
+}

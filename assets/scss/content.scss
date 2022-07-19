@@ -1,0 +1,100 @@
+.ab-primary {
+    min-height: 100%;
+    border-right: $border;
+    padding-top: 3em;
+    border-spacing: 4em;
+
+    &>div.postpreview:last-child{
+        border-bottom: none;
+    }
+
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        margin: 2em;
+        border-right: none;
+    }
+
+    @media screen and (max-width: 440px) {
+        width: 100%;
+    }
+}
+
+.ab-secondary {
+    padding-top: 4em;
+    padding-left: 4em;
+
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.postpreview {
+    padding-bottom: 0.8em ;
+    border-bottom: $border;
+    object-fit: contain;
+}
+
+.post-thumbnail {
+    background-position: 50%;
+    width: 90%;
+    height: 12em;
+    margin: 3em 1em 2em 2em;
+    padding: 2em 1em 5em 1em;
+    text-shadow: 0 0 1em rgb(0, 0, 0);
+    color: #fff;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5) inset;
+    overflow: hidden;
+
+    a {
+        color: #fff;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: 300px;
+    }
+
+    @media screen and (max-width: 991px) {
+        height: 274.017px;
+    }
+
+    @media screen and (max-width: 440px) {
+        width: 100%;
+        height: 406px;
+        margin: auto;
+        margin-bottom: 4em;
+    }
+}
+
+.single-title {
+    height: auto;
+    border-right: $border;
+    padding-top: 4em;
+
+    @media screen and (max-width: 991px) {
+        border: none;
+    }
+}
+
+.single-primary {
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.single-tertiary {
+    padding-top: 6em;
+    padding-left: 4em;
+
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.page-header {
+    padding: 0;
+}
+
+.single-slider-box {
+    display: flex;
+    justify-content: center;
+}
